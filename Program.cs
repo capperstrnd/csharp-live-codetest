@@ -1,5 +1,6 @@
 ﻿public class Program
 {
+    static string startingLetter = "J";
     public static IEnumerable<Employee> Employees = new Employee[]
         {
             new Employee
@@ -70,6 +71,16 @@
         foreach(var employee in filtered) {
             Console.WriteLine(employee.Name);
         }
+
+        var namesAndSkills = GetEmployeeAndSkills();
+
+        foreach(var employee in namesAndSkills) {
+            Console.WriteLine(employee.Key);
+            Console.WriteLine("Skills: ");
+            foreach (var skill in employee.Value) {
+                Console.Write(skill + ", ");
+            }
+        }
     }
     public static List<Employee> GetEmployeesBasedOnAge(int ageLimit) {
         var filteredList = new List<Employee>();
@@ -77,6 +88,28 @@
         filteredList = Employees.Where(x => x.Age > ageLimit).ToList();
 
         return filteredList;
+    }
+
+    public static Dictionary<string, string[]> GetEmployeeAndSkills() {
+        var employees = new Dictionary<string, string[]>();
+        
+        var filteredList = Employees.Where(x => x.Name.StartsWith(startingLetter)).ToList();
+
+        foreach(var employee in filteredList) {
+            
+            var name = employee.Name;
+
+            if (employees.ContainsKey(name))
+                name += " (2)";
+
+            employees.Add(
+                name,
+                employee.Skills.ToArray()
+            );
+
+        }
+
+        return employees;
     }
 }
 
