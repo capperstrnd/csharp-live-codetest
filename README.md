@@ -57,6 +57,6 @@ _____________
 
 ## Avslutande tankar
 
-Relativt enkelt, hade till och med käppar i hjulen för att jag inte har fullstora Visual Studio installerat men klarade mig ändå med commandline dotnet. Fick ta enklare livlinor bara för min autocomplete inte fungerade med vad metoderna hette (Google, not ChatGPT).
+Relativt enkelt och fick respons att jag löste det mycket snabbare än snittet, hade till och med käppar i hjulen för att jag inte har fullstora Visual Studio installerat men klarade mig ändå med commandline dotnet/VS Code. Fick ta enklare livlinor bara för min autocomplete inte fungerade med vad metoderna hette (Google, not ChatGPT).
 
-Lyckades även få med att jobba hos kund eller in-house har jag ingen preferens för, men hoppas kunna få god kundkontakt utöver det normala via vanlife - då jag kan kombinera att jobba distans med att landa hos kunden även om de inte är lokala utan kanske är i Norrland men ändå kan komma och jobba hos de en vecka.
+Lyckades även få med att jobba hos kund eller in-house har jag ingen preferens för, men hoppas kunna få god kundkontakt utöver det normala via vanlife - då jag kan kombinera de dagar jag jobbar distans med att landa hos kunden även om de inte är lokala utan kanske är i Norrland men ändå kan komma och jobba hos de en vecka.
